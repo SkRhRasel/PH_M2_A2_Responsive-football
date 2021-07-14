@@ -15,7 +15,7 @@ body {
 .content {
     max-width: 1160px;
     margin: auto;
-    padding: 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .f-left {
@@ -124,11 +124,15 @@ body {
     Banner Style 
 -------------- */
 
+#clubs {}
+
 .banner {
-    overflow: hidden;
-    clear: both;
     background-color: #2D25A0;
     width: 100%;
+    padding: 200px 0px 86px 0px;
+}
+
+.banner-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 30px;
@@ -138,7 +142,12 @@ body {
     align-items: center;
 }
 
+.fa-arrow-right {
+    margin-left: 8px;
+}
+
 .banner-left-item h1 {
+    color: #FFFFFF;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
@@ -161,6 +170,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
+    margin-top: 70px;
 }
 
 .single-player {
@@ -182,6 +192,7 @@ body {
 }
 
 .player-info p {
+    color: #6C6C6C;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -194,14 +205,69 @@ body {
 
 
 /* -------------
+    Highlights  Style 
+-------------- */
+
+.highlight {
+    background-color: #FFFFFF;
+    padding-top: 150px;
+}
+
+.highlight-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+}
+
+.highlight-left-item {
+    align-items: center;
+}
+
+.highlight-left-item h1 {
+    color: #0A0826;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0px;
+    padding-top: 35px;
+    text-align: left;
+}
+
+.highlight-left-item p {
+    color: #6C6C6C;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    padding-right: 65px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.highlight-left-item a {
+    margin-top: 8px;
+}
+
+.highlight-right-item img {
+    width: 100%;
+    align-items: center;
+}
+
+
+/* -------------
     footer Style 
 -------------- */
 
 .footer-content {
+    padding-top: 150px;
     width: 484px;
     align-items: center;
     margin: auto;
-    padding-bottom: 63px;
+    padding-bottom: 30px;
 }
 
 .footer-content img {
