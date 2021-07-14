@@ -1,6 +1,6 @@
-/* theme fonts */
+/* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /* ---------------
 common style 
@@ -8,63 +8,253 @@ common style
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #F3F1FF;
+    background-color: #FFFFFF;
     margin: 0px;
 }
 
 .content {
-    max-width: 870px;
+    max-width: 1160px;
     margin: auto;
-    padding: 0px 25px;
+    padding: 0px 0px;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.m_l_14 {
+    margin-left: 14px;
+}
+
+.link-btn {
+    text-decoration: none;
+    border-radius: 0px;
+    background-color: #E02C6D;
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 24px;
+    font-size: 16px;
+}
+
+.read_more a {
+    color: #E02C6D;
+    text-decoration: none;
+    float: right;
+    font-size: 16px;
+}
+
+.read_more a:hover {
+    background-color: #E02C6D;
+    color: white;
+    text-decoration: none;
+}
+
+.read-link-btn {
+    text-decoration: none;
+    border: 1px solid #E02C6D;
+    font-weight: 500;
+    background-color: white;
+    padding: 10px 24px;
 }
 
 
-/* --------------------------------------------- 
+/* -------------
     Header Nav Style 
---------------------------------------------- */
+-------------- */
 
 #home {
-    margin-bottom: 150px;
+    /* margin-bottom: 150px;
+    display: flex;
+    align-items: center; */
+}
+
+.fa-sign-in-alt {
+    margin-right: 8px;
 }
 
 .nav-container {
+    padding: 30px 0px;
     overflow: hidden;
-    background-color: #0B0D17;
+    background-color: #2D25A0;
     position: fixed;
     top: 0;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 60px;
 }
 
-#logo {
+#navbar {
     padding: 10px 0px;
-    width: 130px;
 }
 
-#navbar li {
+#navbar ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar ul li {
     display: inline-block;
-    margin-top: 18px;
     padding-left: 0px;
 }
 
 #navbar ul li a {
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-    min-width: 90px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
+    font-weight: 500;
+    padding: 0px 36px 0px 0px;
 }
 
 #navbar a:hover {
-    background-color: white;
-    color: black;
+    color: #E02C6D;
 }
 
-#navbar a.active {
-    background-color: #FC954A;
-    color: white;
+
+/* -------------
+    Banner Style 
+-------------- */
+
+.banner {
+    overflow: hidden;
+    clear: both;
+    background-color: #2D25A0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+}
+
+.banner-left-item {
+    align-items: center;
+}
+
+.banner-left-item h1 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.banner-right-item img {
+    width: 100%;
+    align-items: center;
+}
+
+
+/* -------------
+    Player Style 
+-------------- */
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+
+.single-player {
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin-bottom: 27px;
+}
+
+.player-image img {
+    width: 100%;
+}
+
+.player-info h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.player-info p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+
+/* -------------
+    footer Style 
+-------------- */
+
+.footer-content {
+    width: 484px;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 63px;
+}
+
+.footer-content img {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.social {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.social ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.social ul li a {
+    color: #969BAB;
+    height: 32px;
+    width: 32px;
+    background-color: #E7E7E8;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+}
+
+.social ul li a:hover {
+    color: #FFFFFF;
+    height: 32px;
+    width: 32px;
+}
+
+.social ul li a:hover {
+    background-color: #E02C6D;
+    color: #FFFFFF;
+}
+
+.footer-content p {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0em;
+    padding: 0px;
+    margin-left: 14px;
 }
