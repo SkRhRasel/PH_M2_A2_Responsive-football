@@ -1,0 +1,125 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* --------------- common style ----------------- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    margin: 0px;
+}
+
+.content {
+    max-width: 1160px;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.m_l_14 {
+    margin-left: 14px;
+}
+
+.link-btn {
+    text-decoration: none;
+    border-radius: 0px;
+    background-color: #E02C6D;
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 24px;
+    font-size: 16px;
+}
+
+.link-btn:hover {
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    -o-transform: scale(1.07);
+}
+
+.read_more a {
+    color: #E02C6D;
+    text-decoration: none;
+    float: right;
+    font-size: 16px;
+}
+
+.read_more a:hover {
+    background-color: #E02C6D;
+    color: white;
+    text-decoration: none;
+}
+
+.read-link-btn {
+    text-decoration: none;
+    border: 1px solid #E02C6D;
+    font-weight: 500;
+    background-color: white;
+    padding: 10px 24px;
+}
+
+.section-title {
+    color: #0A0826;
+    font-size: 32px;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.section-title h1 {
+    color: #0A0826;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.section-title p {
+    color: #6C6C6C;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* .row-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    grid-column-gap: 25px;
+}
+
+.grid-view-single-item {
+    padding: 15px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0px;
+    justify-content: space-between;
+} */
