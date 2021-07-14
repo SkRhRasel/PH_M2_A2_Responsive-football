@@ -1,10 +1,7 @@
 /* ------------- Header Nav Style -------------- */
 
 #home {
-    /* margin-bottom: 150px;
-    display: flex;
-    align-items: center;
-    */
+    z-index: 9999;
 }
 
 .fa-sign-in-alt {
@@ -348,44 +345,48 @@
 
 /* ------------------- team Style -------------------- */
 
-.flexible-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 0px;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
 .teams-area {
     padding-top: 70px;
     padding-bottom: 0px;
+    align-items: center;
     background-color: white;
+}
+
+.flexible-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .teams-item {
-    align-items: center;
     background-color: white;
     padding: 0px;
-    width: 60%;
+    display: inline-block;
+    font-size: 14px;
+    display: grid;
+    place-items: center;
 }
 
 .teams-item img {
-    width: 60%;
     align-items: center;
+    width: 60%;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
 }
 
 .teams-item img:hover {
-    transition: transform 0.2s ease-out;
-    -webkit-transition: transform 0.2s ease-out;
-    -moz-transition: transform 0.2s ease-out;
-    -ms-transition: transform 0.2s ease-out;
-    -o-transition: transform 0.2s ease-out;
-    transform: scale(1.12);
-    -webkit-transform: scale(1.12);
-    -moz-transform: scale(1.12);
-    -ms-transform: scale(1.12);
-    -o-transform: scale(1.12);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
 }
 
 
@@ -469,6 +470,14 @@ input {
 .social ul li {
     list-style: none;
     text-decoration: none;
+}
+
+.social ul li:hover {
+    transform: scale(1.27);
+    -webkit-transform: scale(1.27);
+    -moz-transform: scale(1.27);
+    -ms-transform: scale(1.27);
+    -o-transform: scale(1.27);
 }
 
 .social ul li a {
