@@ -109,6 +109,12 @@ h1 {
     margin-bottom: 50px;
 }
 
+.row-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* .row-view {
     display: flex;

@@ -472,13 +472,17 @@ input {
 }
 
 .social ul li a {
-    color: #969BAB;
     height: 32px;
     width: 32px;
-    background-color: #E7E7E8;
+    display: inline-block;
+    font-size: 14px;
+    display: grid;
+    place-items: center;
+    color: #969bab;
+    background-color: #0b0d172b;
     border-radius: 50%;
+    text-decoration: none;
     text-align: center;
-    padding: 5px;
 }
 
 .social ul li a:hover {
